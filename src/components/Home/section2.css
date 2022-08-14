@@ -1,0 +1,52 @@
+.imageholder{
+    display: flex;
+}
+.img{
+    width: 150px;
+    height: px;
+    padding: 10px;
+
+}
+.hold{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec1{
+    padding: 0 70px 0 70px;
+}
+.bg{
+    background-color:#8AC430 ;
+    margin: 40px;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+  
+
+
+}
+.sect2{
+    display: flex;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 80%;
+    background: rgba(0, 0, 0, 0.38);
+    display: flex;
+}
+.newdiv{
+    display: flex;
+    margin-top: 10px;
+}
+.newp{
+    margin-left: 10px;
+    
+}
+.newsect{
+    margin-top: 100px;
+    margin-left: 100px;
+}

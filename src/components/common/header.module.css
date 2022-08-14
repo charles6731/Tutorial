@@ -1,0 +1,35 @@
+.logo{
+    font-size:large ;
+    font-weight: bold;
+    ;
+}
+nav{
+    display: flex;
+    background-color: #8AC4304D;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.list{
+    display: flex;
+    list-style: none;
+    margin-right: auto;
+    color: black;
+    margin-top: 15px;
+}
+.list span {
+    color: blue;
+}
+.list li {
+    margin-left: 40px;
+}
+nav button{
+    background:#FF571E;
+    height: 50px;
+    width: 120px;
+    border-radius: 20px;
+    margin-right: 50px;
+    color: white;
+    font-size: 15px;
+    border: none;
+}

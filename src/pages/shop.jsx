@@ -1,8 +1,19 @@
-import React from "react";
+import React,{useState,UseEfect} from "react";
+import Navbar from "../components/common/Navbar";
+import Product from "../components/shop/Product"
 
-function shop(){
+function Shop(){
+    const [products, setProducts] = useState([]);
     return(
-        <div>shop</div>
+        <div>
+           <div>
+           <Navbar/>
+           </div>
+           <div>
+            <Product/>
+           </div>
+        </div>
+       
     )
 }
-export default shop;
+export default Shop;

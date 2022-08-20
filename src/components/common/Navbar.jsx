@@ -7,7 +7,7 @@ function Navbar(){
             <div><img src={logo} alt="" /></div>
             <ul className={styles.list}>
                 <li>
-                    <a href="/home">Home</a>
+                    <a href="/">Home</a>
                 </li>
                 <li>
                     <a href="/about">About Us</a>
@@ -24,7 +24,7 @@ function Navbar(){
                 </li>
             </ul>
             <button>
-                <a href="">Contact Us</a>
+                <a href="/shop">Shop Up</a>
             </button>
 
         </nav>

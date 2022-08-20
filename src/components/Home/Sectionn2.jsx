@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect }from "react";
 import  "./section2.css"
 import image1 from "../../assets/Ellipse 1.png"
 import image2 from "../../assets/Ellipse 2.png"
@@ -12,52 +12,51 @@ import guy from "../../assets/image 6.png"
 function  HeroSection2(){
     const [Popular, setPopular] = React.useState("");
 
+    // React.useEffect(() => {
+    //     setTimeout(() => {
+    //         setPopular([
+    //             {id:1, name: "Tomatoes", image: image1},
+    //             {id:2, name: "Carrot", image: image2},
+    //             {id:3, name: "Cucumber", image: image3},
+    //             {id:4, name: "Yellow Pepper", image: image4},
+    //             {id:5, name: "Oranges", image: image5},
+    //             {id:6, name: "Apple", image: image6},
+    //             {id:7, name: "Grapes", image: image8},
+    //             {id:8, name: "Strawberry", image: image9},
+    //         ]);
+    //     }, 3000);
+    // }, []);
+    // useEffect(function (){}, [])
     React.useEffect(() => {
         setTimeout(() => {
             setPopular([
-                {id:1, name: "Tomatoes", image: "image1"},
-                {id:2, name: "Carrot", image: "image2"},
-                {id:3, name: "Cucumber", image: "image3"},
-                {id:4, name: "Yellow Pepper", image: "image4"},
-                {id:5, name: "Oranges", image: "image5"},
-                {id:6, namCe: "Apple", image: "image6"},
-                {id:7, name: "Grapes", image: "image8"},
-                {id:8, name: "Strawberrt", image: "image9"},
+                {id:1, name: "Tomatoes", image: image1},
+                {id:2, name: "Carrot", image: image2},
+                {id:3, name: "Cucumber", image: image3},
+                {id:4, name: "Yellow Pepper", image: image4},
+                {id:5, name: "Oranges", image: image5},
+                {id:6, name: "Apple", image: image6},
+                {id:7, name: "Grapes", image: image8},
+                {id:8, name: "Strawberry", image: image9},
             ]);
         }, 3000);
     }, []);
+    useEffect(function (){}, [])
     return(
         <div>
             <section className="sec1">
-                <h2 id="">Popular Items {value} </h2>
+                <h2 id="">Popular Items  </h2>
                 <div className="imageholder">
-                    <div className="hold">
-                        <img src={image1} alt="" className="img"/>
-                        <h4 >Tomatoe</h4 >
+                   {
+                   Popular? Popular.map(function (item,index){
+                        return (
+                            <div className="hold" key={item.id}>
+                        <img src={item.image} alt="" className="img"/>
+                        <h4>{item.name}</h4 >
                     </div>
-                    <div>
-                        <img src={image2} alt="" className="img" />
-                        <h4 >Carrot</h4 >
-                    </div> <div>
-                        <img src={image3} alt="" className="img" />
-                        <h4 >Cucumber</h4 >
-                    </div> <div className="">
-                        <img src={image4} alt="" className="img" />
-                        <h4 >Yellow Pepper</h4 >
-                    </div> <div className="">
-                        <img src={image5} alt="" className="img" />
-                        <h4 className="" >Oranges</h4 >
-                    </div> <div>
-                        <img src={image6} alt="" className="img" />
-                        <h4 >Apple</h4 >
-                    </div> <div>
-                        <img src={image8} alt="" className="img" />
-                        <h4 >Grapes</h4 >
-                    </div>
-                    <div>
-                        <img src={image9} alt="" className="img" />
-                        <h4 >Strawberry</h4 >
-                    </div>
+                        );
+                    }) : (<div>Loading..</div>
+                   )}
                     
                 </div>
             </section>

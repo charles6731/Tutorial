@@ -6,14 +6,26 @@ function Navbar(){
         <nav>
             <div><img src={logo} alt="" /></div>
             <ul className={styles.list}>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Services</li>
-                <li>Contact</li>
-                <li>Help</li>
-                <li>Help</li>
+                <li>
+                    <a href="/home">Home</a>
+                </li>
+                <li>
+                    <a href="/about">About Us</a>
+                </li>
+                <li><a href="/services">Services</a></li>
+                <li>
+                    <a href="/contact">Contact</a>
+                </li>
+                <li>
+                    <a href="/help">Help</a>
+                </li>
+                <li>
+                    <a href=""></a>
+                </li>
             </ul>
-            <button>Contact Us</button>
+            <button>
+                <a href="">Contact Us</a>
+            </button>
 
         </nav>
     )

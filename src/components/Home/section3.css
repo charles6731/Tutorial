@@ -1,0 +1,41 @@
+.box-holder{
+    display: flex;
+    flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+    
+}
+.img{
+    width: 100%;
+}
+
+.sect{
+    background-color: #ECE9E3;
+}
+.stars{
+    width: 30%;
+}
+.review{
+    font-size: 12px;
+    font-weight: 400;
+}
+.hold{
+width: 300px;
+background-color: white;
+margin-right: 60px;
+padding-left: 60px;
+padding-right: 60px;
+padding-top: 50px;
+height: 450px;
+margin-top: 30px;
+}
+.name{
+   line-height: 0px;
+}
+.button{
+    padding: 10px 40px;
+    border: 1px solid #8AC430;
+    outline: none;
+    color: #8AC430;
+    background-color: white;
+}

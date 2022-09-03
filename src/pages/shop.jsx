@@ -3,6 +3,7 @@ import Navbar from "../components/common/Navbar";
 import Product from "../components/shop/Product"
 import styles from "../components/shop/Shop.module.css"
 
+
 function Shop(){
     const [products, setProducts] = useState([]);
 

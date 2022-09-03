@@ -5,10 +5,12 @@
 }
 nav{
     display: flex;
-    background-color: #8AC4304D;
+    background-color: #304D;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
+    top: 0;
+    position: fixed;
 }
 .list{
     display: flex;

@@ -1,7 +1,7 @@
 import styles from "./new.module.css"
 import image from "../../assets/image5.png"
 import background from "../../assets/istockphoto.png"
-import newlogo from "../../assets/icon.png"
+import newlogo from "../../assets/Icon.png"
 import image2 from "../../assets/slant.png"
 import image3 from "../../assets/slant2.png"
 
